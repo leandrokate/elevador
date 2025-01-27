@@ -147,3 +147,39 @@ body {
     border-radius: 5px;
     background-color: #fff9;
 }
+
+.terreo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.janela {
+    background-color: #068888;
+    border: 5px solid #fffc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 40%;
+    position: relative;
+}
+
+.janela::after {
+    content: "";
+    position: absolute;
+    border: 1px solid #fffc;
+    top: 0;
+    height: 100%;
+    width: 1px;
+}
+
+.janela::before {
+    content: "";
+    position: absolute;
+    border: 1px solid #fffc;
+    left: 0;
+    height: 1px;
+    width: 100%;
+}
