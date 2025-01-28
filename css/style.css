@@ -115,12 +115,6 @@ body {
     flex: 2;
 }
 
-.poco {
-    display: flex;
-    background-color: #fff9;
-    flex: 1;
-}
-
 .andar {
     display: flex;
     justify-content: center;
@@ -153,6 +147,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 2px solid transparent;
 }
 
 .janela {
@@ -182,4 +177,22 @@ body {
     left: 0;
     height: 1px;
     width: 100%;
+}
+
+.poco {
+    display: flex;
+    background-color: #fff9;
+    flex: 1;
+    justify-content: center;
+    position: relative;
+}
+
+.elevador {
+    border: 3px solid black;
+    border-top-width: 10px;
+    background-color: #fffa;
+    width: 80%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
 }
