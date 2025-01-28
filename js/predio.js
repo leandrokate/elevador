@@ -58,6 +58,19 @@
         poco.appendChild(elevador)
     }
 
+    function obterPosicaoAtual() {
+        const elevador = document.querySelector('.elevador')
+        return +elevador.style.bottom.replace('px', '')
+    }
+
+    function moverElevadorPara(andar) {
+        const numero = andar === 't' ? 0 : +andar
+        const elevador = document.querySelector('.elevador')
+
+        elevador.style.bottom = obterPosicaoAtual() + (numero * obterTamanhoElevador())
+    }
+
     criarElevador()
+    moverElevadorPara("t")
 
 }) ()
